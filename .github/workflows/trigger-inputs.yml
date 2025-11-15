@@ -42,7 +42,7 @@ jobs:
 
       # Perform actions based on inputs  
       - name: Run tests (if selected)
-        if: ${{ inputs.run-tests }}
+        if: ${{ inputs.run-tests == 'true' }}
         run: echo "Running tests..."
 
       # Deploy to the chosen environment  
