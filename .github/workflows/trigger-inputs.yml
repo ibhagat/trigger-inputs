@@ -40,12 +40,12 @@ jobs:
           echo "Build number: ${{ inputs.build-number }}"
           echo "Message: ${{ inputs.message }}"
 
-      # Perform actions based on inputs  
+
       - name: Run tests (if selected)
         if: ${{ inputs.run-tests }}
         run: echo "Running tests..."
 
-      # Deploy to the chosen environment  
+
       # Uncomment to deploy based on the selected environment
       # - name: Deploy to ${{ inputs.environment }}
       #   environment: ${{ inputs.environment }}
